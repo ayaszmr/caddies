@@ -1,9 +1,20 @@
 class ReportsController < ApplicationController
+
   def new
     @report = Report.new
   end
 
   def create
-    redirect_to controller: :top, action: :index
+    @report = Report.new(report_params)
+    if @report.save
+      redirect_to root_path
+    else
+      render 'new'
+    end
   end
+
+  private
+    def report_params
+        params.require(:report).permit(:caddy_id, :bags)
+    end
 end
