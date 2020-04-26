@@ -1,11 +1,15 @@
 <h2>お疲れ様でした！入力お願いします</h2>
 
-<%= form_for @report, url: {controller: 'reports', action: 'new'} do |f| %>
-  <h2>キャディー番号</h2>
-  <%= f.text_field :caddy_id %>
+<%= form_for @report, url: new_report_path do |f| %>
+  <p>
+    <%= f.label :caddy_id, "キャディー番号" %><br>
+    <%= f.text_field :caddy_id %>
+  </p>
 
-  <h2>バッグ数<h2>
-  <%= f.number_field :bags %>
+  <p>
+    <%= f.label :bags, "バッグ数" %><br>
+    <%= f.number_field :bags %>
+  </p>
 
   <%= f.submit "完了" %>
 <% end %>
