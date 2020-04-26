@@ -1,6 +1,6 @@
 <h2>お疲れ様でした！入力お願いします</h2>
 
-<%= form_for @report, url: new_report_path do |f| %>
+<%= form_for @report, url: reports_path do |f| %>
   <p>
     <%= f.label :caddy_id, "キャディー番号" %><br>
     <%= f.text_field :caddy_id %>
