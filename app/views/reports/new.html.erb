@@ -1,1 +1,11 @@
 <h2>お疲れ様でした！入力お願いします</h2>
+
+<%= form_for @report, url: {controller: 'reports', action: 'new'} do |f| %>
+  <h2>キャディー番号</h2>
+  <%= f.text_field :caddy_id %>
+
+  <h2>バッグ数<h2>
+  <%= f.number_field :bags %>
+
+  <%= f.submit "完了" %>
+<% end %>
