@@ -15,6 +15,6 @@ class ReportsController < ApplicationController
 
   private
     def report_params
-        params.require(:report).permit(:caddy_id, :bags)
+      params.require(:report).permit(:caddy_id, :bags)
     end
 end
