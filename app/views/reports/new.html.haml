@@ -1,0 +1,11 @@
+%h2 お疲れ様でした！入力お願いします
+= form_for @report, url: reports_path do |f|
+  %p
+    = f.label :caddy_id, "キャディー番号"
+    %br/
+    = f.text_field :caddy_id
+  %p
+    = f.label :bags, "バッグ数"
+    %br/
+    = f.number_field :bags
+  = f.submit "完了"
