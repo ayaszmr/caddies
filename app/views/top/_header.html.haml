@@ -4,7 +4,7 @@
   %ul.header__right
     - if user_signed_in?
       %li.header__name
-        = current_user.name
+        = link_to current_user.name, user_path(current_user)
       %li.header__button
         = link_to "ログアウト", destroy_user_session_path, method: :delete
     - else
