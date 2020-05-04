@@ -50,5 +50,6 @@ test:
 production:
   <<: *default
   database: caddies_production
-  username: caddies
-  password: <%= ENV['CADDIES_DATABASE_PASSWORD'] %>
+  username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock
