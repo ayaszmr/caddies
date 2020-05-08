@@ -10,7 +10,7 @@ class ReportsController < ApplicationController
   def create
     @report = Report.new(report_params)
     if @report.save
-      redirect_to root_path
+      redirect_to reports_path
     else
       render 'new'
     end
