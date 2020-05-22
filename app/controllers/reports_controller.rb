@@ -1,6 +1,8 @@
 class ReportsController < ApplicationController
   def index
     @reports = Report.all
+    # @reports = Report.group_by{|report| report.created_at.to_date}.values
+    # @reports = Order.select("date(created_at) as ordered_date").group("date(created_at)")
   end
   
   def new
