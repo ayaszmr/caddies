@@ -10,8 +10,8 @@ class ReportsController < ApplicationController
   end
 
   def create
-    @report = Report.new(report_params)
-    # @report = Report.new(caddy_id: report_params[:caddy_id], bags: report_params[:bags], user_id: current_user.id)
+    # @report = Report.new(report_params)
+    @report = Report.new(caddy_id: report_params[:caddy_id], bags: report_params[:bags], user_id: current_user.id)
     if @report.save(user_id: current_user.id)
       redirect_to reports_path
     else
