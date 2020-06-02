@@ -7,14 +7,15 @@
     .account-page__inner--right.user-form
       = form_for @report, url: reports_path do |f|
         .field
+          .field-input
+            = f.date_select :round_at, default: Date.today, use_month_numbers: true
           .field-label
             = f.label :caddy_id, "キャディー番号"
           .field-input
             = f.text_field :caddy_id
-          .field
-            .field-label
-              = f.label :bags, "バッグ数"
-            .field-input
-              = f.number_field :bags
+          .field-label
+            = f.label :bags, "バッグ数"
+          .field-input
+            = f.number_field :bags
           .actions
             = f.submit "完了"

@@ -1,6 +1,16 @@
 = render 'top/header'
 
-- @reports.each do |report|
-  = report.caddy_id
+-# = form_for(@selected_date) do |f|
+-#   = f.date_select :round_at, default: Date.today
+-#   = f.submit "検索" 
 
-= @date
+明日の出番表です。
+%br
+- @two_bags.each do |report|
+  = report.caddy_id
+%br
+- @three_bags.each do |report|
+  = report.caddy_id
+%br
+- @four_bags.each do |report|
+  = report.caddy_id

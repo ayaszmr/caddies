@@ -1,10 +1,10 @@
+require 'date'
+
 class ReportsController < ApplicationController
   def index
-    @reports = Report.all
-    # @reports = Report.group_by{|report| report.created_at.to_date}.values
-    # @reports = Order.select("date(created_at) as ordered_date").group("date(created_at)")
-    @date = Date.today
-    
+    @two_bags = Report.where(bags: 2).where(round_at: @selected_date)
+    @three_bags = Report.where(bags: 3).where(round_at: @selected_date)
+    @four_bags = Report.where(bags: 4).where(round_at: @selected_date)
   end
   
   def new
@@ -13,7 +13,8 @@ class ReportsController < ApplicationController
 
   def create
     # @report = Report.new(report_params)
-    @report = Report.new(caddy_id: report_params[:caddy_id], bags: report_params[:bags], user_id: current_user.id)
+    # binding.pry
+    @report = Report.new(caddy_id: report_params[:caddy_id], bags: report_params[:bags], user_id: current_user.id, round_at: Date.today)
     if @report.save(user_id: current_user.id)
       redirect_to reports_path
     else
@@ -23,6 +24,6 @@ class ReportsController < ApplicationController
 
   private
     def report_params
-      params.require(:report).permit(:caddy_id, :bags)
+      params.require(:report).permit(:caddy_id, :bags,)
     end
 end
