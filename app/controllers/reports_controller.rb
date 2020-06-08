@@ -2,9 +2,9 @@ require 'date'
 
 class ReportsController < ApplicationController
   def index
-    @two_bags = Report.where(bags: 2).where(round_at: @selected_date)
-    @three_bags = Report.where(bags: 3).where(round_at: @selected_date)
-    @four_bags = Report.where(bags: 4).where(round_at: @selected_date)
+    @two_bags = Report.where(bags: 2).where(round_at: Date.today)
+    @three_bags = Report.where(bags: 3).where(round_at: Date.today)
+    @four_bags = Report.where(bags: 4).where(round_at: Date.today)
   end
   
   def new

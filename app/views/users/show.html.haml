@@ -1,13 +1,18 @@
 = render "top/header"
-= @user.name
-のページです。
 
-あなたの今月のバッグ数は
-= @bags
-個です。
-
-あなたの今月の出勤日数は
-= @days
-日です。
+.main-mypage
+  .center-mypage
+    %ul.center-mypage--box
+      %li.center-mypage--box__text
+        = @user.name
+        のページです。
+      %li.center-mypage--box__text
+        あなたの今月のバッグ数は
+        = @bags
+        個です。
+      %li.center-mypage--box__text
+        あなたの今月の出勤日数は
+        = @days
+        日です。
 
 

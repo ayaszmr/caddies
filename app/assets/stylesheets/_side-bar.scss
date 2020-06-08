@@ -2,4 +2,31 @@
   width: 300px;
   height: calc(100vh - 150px);
   background-color: royalblue;
+  .side-nav {
+    width: 280px;
+    height: calc(100vh - 150px);
+    &-list {
+      width: 280px;
+      height: calc(100vh - 150px);
+      list-style-type : none;
+      padding:5px 10px;
+      &--item {
+        width: 248px;
+        position: relative;
+        display: block;
+        background: royalblue;
+        font-size: 14px;
+        color: #333;
+        box-sizing: inherit;
+        padding: 16px;
+        line-height: 14px;
+        text-decoration: none;
+        border-bottom: 1px solid navy;
+        .icon-arrow-right {
+          width: 8px;
+          height: 14px;
+        }
+      }
+    }
+  }
 }

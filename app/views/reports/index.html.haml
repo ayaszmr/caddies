@@ -1,16 +1,95 @@
 = render 'top/header'
 
+
+.main-report
+  .center-report
+    .center-report--head
+      .center-report--head__text
+        %h2 明日の出番表
+    .center-report--main
+      %table.center-report--main__table
+        %tr
+          %th 6:30
+          %td
+            - @two_bags.each do |report|
+              = report.caddy_id
+          
+        %tr
+          %th 7:00
+          %td
+            - @three_bags.each do |report|
+              = report.caddy_id
+          
+        %tr
+          %th 7:30
+          %td
+            - @four_bags.each do |report|
+              = report.caddy_id
+        %tr
+          %th 8:00
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+        %tr
+          %th 8:30
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+        %tr
+          %th 9:00
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+        %tr
+          %th 9:30
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+        %tr
+          %th 10:00
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+          %tdデータ
+
+
+
+
+
 -# = form_for(@selected_date) do |f|
 -#   = f.date_select :round_at, default: Date.today
 -#   = f.submit "検索" 
-
-明日の出番表です。
-%br
-- @two_bags.each do |report|
-  = report.caddy_id
-%br
-- @three_bags.each do |report|
-  = report.caddy_id
-%br
-- @four_bags.each do |report|
-  = report.caddy_id
