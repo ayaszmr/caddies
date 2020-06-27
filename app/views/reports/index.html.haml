@@ -89,7 +89,6 @@
 
 
 
-
--# = form_for(@selected_date) do |f|
--#   = f.date_select :round_at, default: Date.today
--#   = f.submit "検索" 
+= form_tag(search_reports_path, method: :get, class: "search-form") do
+  = date_select_tag :round_at, default: Date.today, class: "search-input"
+  = submit_tag 'search', class: "search-btn"
