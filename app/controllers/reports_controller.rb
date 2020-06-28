@@ -20,6 +20,11 @@ class ReportsController < ApplicationController
     else
       render 'new'
     end
+
+    def search
+      @reports = Report.search(params[:round_at])
+      binding.pry
+    end
   end
 
   private
