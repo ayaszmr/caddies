@@ -1,4 +1,9 @@
+= render 'top/header'
+
 .center-report--main
   %table.center-report--main__table
     = @reports.each do |report|
       = report.caddy_id
+
+.search_content
+  = render 'search_form'
