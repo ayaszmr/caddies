@@ -85,18 +85,5 @@
           %tdデータ
           %tdデータ
           %tdデータ
-    
-    .search_content
-      = search_form_for(@q, url:search_reports_path) do |f|
-        = f.label :round_at,"日付で検索"
-        = f.date_field :round_at_eq  
-        = f.submit "検索", class: "search-btn",type:"submit"
-
-
-
-
-
-
-      -# = form_tag(search_reports_path, method: :get, class: "search-form") do
-      -#   = date_select :round_at, default: Date.today, class: "search-input"
-      -#   = submit_tag 'search', class: "search-btn"
+  .search_content
+    = render 'search_form'

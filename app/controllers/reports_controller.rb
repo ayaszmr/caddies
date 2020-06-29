@@ -1,6 +1,7 @@
 require 'date'
 
 class ReportsController < ApplicationController
+  before_action :set_ransack
   def index
     @two_bags = Report.where(bags: 2).where(round_at: Date.today)
     @three_bags = Report.where(bags: 3).where(round_at: Date.today)
@@ -34,6 +35,9 @@ class ReportsController < ApplicationController
       params.require(:report).permit(:caddy_id, :bags,)
     end
     def search_params
-      params.require(:q).permit!
+      params.require(:q).permit(:round_at_eq)
+    end
+    def set_ransack
+      @q = Report.ransack(params[:q])  
     end
 end
