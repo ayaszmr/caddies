@@ -8,7 +8,7 @@
       = form_for @report, url: reports_path do |f|
         .field
           .field-input
-            = f.date_select :round_at, default: Date.today, use_month_numbers: true
+            = f.date_field :round_at, default: Date.today, use_month_numbers: true
           .field-label
             = f.label :caddy_id, "キャディー番号"
           .field-input

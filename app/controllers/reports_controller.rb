@@ -5,6 +5,9 @@ class ReportsController < ApplicationController
     @two_bags = Report.where(bags: 2).where(round_at: Date.today)
     @three_bags = Report.where(bags: 3).where(round_at: Date.today)
     @four_bags = Report.where(bags: 4).where(round_at: Date.today)
+
+    @q=Report.ransack(params[:q])
+    @reports=@q.result(distinct: true)
   end
   
   def new
@@ -20,15 +23,17 @@ class ReportsController < ApplicationController
     else
       render 'new'
     end
-
-    def search
-      @reports = Report.search(params[:round_at])
-      binding.pry
-    end
+  end
+  def search
+    @q = Report.search(search_params)
+    @reports = @q.result(distinct: true)
   end
 
   private
     def report_params
       params.require(:report).permit(:caddy_id, :bags,)
+    end
+    def search_params
+      params.require(:q).permit!
     end
 end
