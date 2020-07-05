@@ -1,18 +1,18 @@
 .side-bar {
-  width: 300px;
-  height: calc(100vh - 150px);
+  width: 100vw;
+  height: 6vh;
   background-color: royalblue;
   .side-nav {
-    width: 280px;
-    height: calc(100vh - 150px);
+    width: 100vw;
+    height: 10vh;
     &-list {
-      width: 280px;
-      height: calc(100vh - 150px);
+      width: 30vw;
+      height: 10vh;
       list-style-type : none;
       padding:5px 10px;
+      display: flex;
       &--item {
-        width: 248px;
-        position: relative;
+        width: 15vw;
         display: block;
         background: royalblue;
         font-size: 14px;
@@ -21,7 +21,6 @@
         padding: 16px;
         line-height: 14px;
         text-decoration: none;
-        border-bottom: 1px solid navy;
         .icon-arrow-right {
           width: 8px;
           height: 14px;

@@ -7,78 +7,78 @@
       .center-report--head__text
         %h2 明日の出番表
     .center-report--main
-      %table.center-report--main__table
-        %tr
-          %th 6:30
-          %td
-            - @bags.each do |report|
+      - @bags.each do |report|
+        %table.center-report--main__table
+          %tr
+            %th 6:30
+            %td
               = report.caddy_id
-          
-        %tr
-          %th 7:00
-          %td
-        %tr
-          %th 7:30
-          %td
-        %tr
-          %th 8:00
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-        %tr
-          %th 8:30
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-        %tr
-          %th 9:00
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-        %tr
-          %th 9:30
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-        %tr
-          %th 10:00
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-          %tdデータ
-  .search_content
-    = render 'search_form'
+          %tr
+            %th 7:00
+            %td
+          %tr
+            %th 7:30
+            %td
+          %tr
+            %th 8:00
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+          %tr
+            %th 8:30
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+          %tr
+            %th 9:00
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+          %tr
+            %th 9:30
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+          %tr
+            %th 10:00
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+            %tdデータ
+    
+    .search_content
+      = render 'search_form'
