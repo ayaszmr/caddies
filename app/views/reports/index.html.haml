@@ -11,20 +11,15 @@
         %tr
           %th 6:30
           %td
-            - @two_bags.each do |report|
+            - @bags.each do |report|
               = report.caddy_id
           
         %tr
           %th 7:00
           %td
-            - @three_bags.each do |report|
-              = report.caddy_id
-          
         %tr
           %th 7:30
           %td
-            - @four_bags.each do |report|
-              = report.caddy_id
         %tr
           %th 8:00
           %tdデータ
