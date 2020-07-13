@@ -1,11 +1,43 @@
 = render 'top/header'
 = render 'top/side-bar'
 
+.main-report
+  .center-report
+    .center-report--head
+      .center-report--head__text
+        %h2 出番表
+    .center-report--main     
+      %table.center-report--main__table
+        %tr
+          %th 6:30
+          - @bags.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 7:00
+          - @bagss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 7:30
+          - @bagsss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 8:00
+          - @bagssss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 8:30
+          - @bagssssss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 9:00
+          - @bagsssss.each do |report|
+            %td
+              = report.caddy_id
 
-.center-report--main
-  %table.center-report--main__table
-    = @reports.each do |report|
-      = report.caddy_id
-
-.search_content
-  = render 'search_form'
+  .search_content
+    = render 'search_form'

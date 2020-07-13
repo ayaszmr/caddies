@@ -11,8 +11,8 @@ class ReportsController < ApplicationController
     @bagssssss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(25)
 
 
-    @q=Report.ransack(params[:q])
-    @reports=@q.result(distinct: true)
+    @q = Report.ransack(params[:q])
+    @reports = @q.result(distinct: true)
   end
   
   def new
@@ -30,8 +30,15 @@ class ReportsController < ApplicationController
     end
   end
   def search
-    @q = Report.search(search_params)
+    @q = Report.ransack(search_params)
     @reports = @q.result(distinct: true)
+      
+    @bags = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).first(5)
+    @bagss = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).limit(5).offset(5)
+    @bagsss = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).limit(5).offset(10)
+    @bagssss = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).limit(5).offset(15)
+    @bagsssss = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).limit(5).offset(20)
+    @bagssssss = Report.order(bags: "ASC").where(round_at: @q.round_at_eq).limit(5).offset(25)
   end
 
   private
