@@ -7,79 +7,38 @@
     .center-report--head
       .center-report--head__text
         %h2 明日の出番表
-    .center-report--main
-      - @bags.each do |report|
-        %table.center-report--main__table
-          %tr
-            %th 6:30
+    .center-report--main     
+      %table.center-report--main__table
+        %tr
+          %th 6:30
+          - @bags.each do |report|
             %td
               = report.caddy_id
-          %tr
-            %th 7:00
+        %tr
+          %th 7:00
+          - @bagss.each do |report|
             %td
-          %tr
-            %th 7:30
+              = report.caddy_id
+        %tr
+          %th 7:30
+          - @bagsss.each do |report|
             %td
-          %tr
-            %th 8:00
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-          %tr
-            %th 8:30
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-          %tr
-            %th 9:00
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-          %tr
-            %th 9:30
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-          %tr
-            %th 10:00
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
-            %tdデータ
+              = report.caddy_id
+        %tr
+          %th 8:00
+          - @bagssss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 8:30
+          - @bagssssss.each do |report|
+            %td
+              = report.caddy_id
+        %tr
+          %th 9:00
+          - @bagsssss.each do |report|
+            %td
+              = report.caddy_id
     
-    .search_content
-      = render 'search_form'
+  .search_content
+    = render 'search_form'
