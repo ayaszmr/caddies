@@ -13,7 +13,7 @@ a{
 /*ハンバーガーボタン*/
 .el_humburger {
   position: fixed;
-  top: 45px;
+  top: 250px;
   right: 60px;
   width: 46px;
   height: 25px;
@@ -24,7 +24,7 @@ a{
   z-index: 20;
   cursor: pointer;
   pointer-events: auto;
-  color: #000;
+  color: royalblue;
   text-align: center;}
  
 @media screen and (max-width: 840px) {
