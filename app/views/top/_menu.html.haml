@@ -1,0 +1,26 @@
+%body
+  .el_humburger
+    / ハンバーガーボタン
+    .el_humburger_wrapper
+      %span.el_humburger_bar.top
+      %span.el_humburger_bar.middle
+      %span.el_humburger_bar.bottom
+  %header.navi
+    / ナビゲーション
+    .navi_inner
+      .navi_item
+        %a{:href => ""} ABOUT
+      .navi_item
+        %a{:href => ""} WORKS
+      .navi_item
+        %a{:href => ""} GALLERY
+      .navi_item
+        %a{:href => ""} FLOW
+      .navi_item
+        %a{:href => ""} FAQ
+      .navi_item
+        %a{:href => ""} CONTACT
+  .mainView
+    / ページコンテンツ
+  / CDNでjQuery読み込む
+  %script{:crossorigin => "anonymous", :integrity => "sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=", :src => "https://code.jquery.com/jquery-2.2.4.min.js"}
