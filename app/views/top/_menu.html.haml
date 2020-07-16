@@ -8,18 +8,26 @@
   %header.navi
     / ナビゲーション
     .navi_inner
+      -# .navi_item
+      -#   %a{:href => "new_group_path"} MESSAGE
       .navi_item
-        %a{:href => ""} ABOUT
+        =link_to new_group_path, class: "navi_item" do
+          MESSAGE
       .navi_item
-        %a{:href => ""} WORKS
+        =link_to "#", class: "navi_item" do
+          WORKS
       .navi_item
-        %a{:href => ""} GALLERY
+        =link_to "#", class: "navi_item" do
+          GALLERY
       .navi_item
-        %a{:href => ""} FLOW
+        =link_to "#", class: "navi_item" do
+          FLOW
       .navi_item
-        %a{:href => ""} FAQ
+        =link_to "#", class: "navi_item" do
+          FAQ
       .navi_item
-        %a{:href => ""} CONTACT
+        =link_to "#", class: "navi_item" do
+          CONTACT
   .mainView
     / ページコンテンツ
   / CDNでjQuery読み込む
