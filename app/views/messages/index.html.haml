@@ -1,2 +1,4 @@
-%h1 Messages#index
-%p Find me in app/views/messages/index.html.haml
+.form
+  = form_for [@group, @message] do |f|
+    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+    = f.submit 'Send', class: 'form__submit'
