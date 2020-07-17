@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  get 'messages/index'
+
+  get 'messages/create'
+
   devise_for :users
   root 'top#index'
   resources :reports, only: [:new, :create, :index] do
