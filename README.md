@@ -44,14 +44,6 @@ python demo.py
  
 # Author
  
-作成情報を列挙する
- 
-* 作成者
-* 所属
-* E-mail
- 
-# License
-ライセンスを明示する
- 
-"hoge" is under [MIT license](https://en.wikipedia.org/wiki/MIT_License).
+## ayaszmr
+<a href="https://github.com/ayaszmr"><img src="https://avatars0.githubusercontent.com/u/56391010?s=460&v=4" height="100px;" /></a>
  
