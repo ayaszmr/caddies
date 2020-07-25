@@ -9,7 +9,7 @@
 
 ログイン
 
-'![login](https://github.com/ayaszmr/caddies.wiki.git/gif/login.gif)'
+'![login](https://github.com/ayaszmr/caddies.wiki/gif/login.gif)'
  
 # Features
  
