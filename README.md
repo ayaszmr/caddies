@@ -9,7 +9,7 @@
 
 ログイン
 
-![caggies](login.gif)
+'![login](https://raw.github.com/wiki/ayaszmr/caddies/gif/login.gif)'
  
 # Features
  
