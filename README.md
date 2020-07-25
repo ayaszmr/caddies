@@ -9,7 +9,7 @@
 
 ログイン
 
-![caggies](login.mp4)
+![caggies](login.gif)
  
 # Features
  
