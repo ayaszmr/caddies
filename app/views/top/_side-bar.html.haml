@@ -13,9 +13,6 @@
         %li
           =link_to groups_path, class: "side-nav-list--item" do
             message
-        %li
-          = link_to edit_user_path(current_user), class: "side-nav-list--item__edit" do
-            = icon('fas', 'cog', class: 'icon')
       - else
         %li
           = link_to "ログイン", new_user_session_path, class: 'side-nav-list--item'
