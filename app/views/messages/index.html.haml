@@ -1,9 +1,6 @@
 = render "top/header"
 = render 'top/side-bar'
 
-
-
-.form
-  = form_for [@group, @message] do |f|
-    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-    = f.submit 'Send', class: 'form__submit'
+.wrapper
+  = render 'messages/left.bar'
+  = render 'messages/chat'
