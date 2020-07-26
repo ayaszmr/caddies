@@ -1,12 +1,10 @@
 .left-bar
-  .left-bar__user-name
-    .top-items
-      aya
-      .top-items__icons
-        = link_to new_group_path do
-          %i.fa.fa-pencil-square-o.header-items__icons--pen
-        = link_to edit_user_path(current_user.id) do
-          %i.fa.fa-cog.header-items__icons--cog
+  .left-bar__header
+    %h3.left-bar--header__name
+      = current_user.name
+    .left-bar--header__icons
+      = link_to new_group_path do
+        %i.fa.fa-plus-squar
   .left-bar__groups-list
     - current_user.groups.each do |group|
       .group
@@ -14,7 +12,7 @@
           .group__name
             = group.name
           .group__message
-            まだありません
+            -# = group.show_last_message
 
 
 
