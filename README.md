@@ -4,8 +4,6 @@
 
  
 # DEMO
- 
-![caggies](readme.jpg)
 
 サインアップ
 ![signup](https://user-images.githubusercontent.com/56391010/88497129-67e42500-cffa-11ea-9e2e-1c6e9c0e716c.gif)
