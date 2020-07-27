@@ -40,12 +40,8 @@ http://18.180.7.159/
 
 # Usage
  
-DEMOの実行方法など、"hoge"の基本的な使い方を説明する
- 
 ```bash
-git clone https://github.com/hoge/~
-cd examples
-python demo.py
+git clone https://github.com/ayaszmr/caddies.git
 ```
  
 # Note
