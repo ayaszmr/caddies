@@ -5,20 +5,19 @@
  
 # DEMO
 
-## サインアップ
+### サインアップ
 ![signup](https://user-images.githubusercontent.com/56391010/88497129-67e42500-cffa-11ea-9e2e-1c6e9c0e716c.gif)
 
-## ログイン
-
+### ログイン
 ![login](https://user-images.githubusercontent.com/56391010/88478418-1482c000-cf83-11ea-96a7-6ff55ea576f9.gif)
 
-## マイページ
+### マイページ
 ![mypage](https://user-images.githubusercontent.com/56391010/88497167-7fbba900-cffa-11ea-84af-0444dcba3c9c.gif)
 
-## シフトスケジュール登録
+### シフトスケジュール登録
 ![report](https://user-images.githubusercontent.com/56391010/88497203-9d890e00-cffa-11ea-90c3-8cb13ba48dff.gif)
 
-## シフト検索
+### シフト検索
 ![search](https://user-images.githubusercontent.com/56391010/88497221-aed21a80-cffa-11ea-92ab-630388201e3d.gif)
 
 # Features
