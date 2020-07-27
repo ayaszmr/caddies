@@ -3,12 +3,12 @@ require 'date'
 class ReportsController < ApplicationController
   before_action :set_ransack
   def index
-    @bags = Report.order(bags: "ASC").where(round_at: Date.today).first(5)
-    @bagss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(5)
-    @bagsss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(10)
-    @bagssss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(15)
-    @bagsssss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(20)
-    @bagssssss = Report.order(bags: "ASC").where(round_at: Date.today).limit(5).offset(25)
+    @bags = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).first(5)
+    @bagss = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).limit(5).offset(5)
+    @bagsss = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).limit(5).offset(10)
+    @bagssss = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).limit(5).offset(15)
+    @bagsssss = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).limit(5).offset(20)
+    @bagssssss = Report.order(bags: "ASC").order(created_at: "ASC").where(round_at: Date.today).limit(5).offset(25)
 
 
     @q = Report.ransack(params[:q])
