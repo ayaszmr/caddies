@@ -1,6 +1,7 @@
 # caddies
 
 ### ゴルフ場で働くキャディさんたちの業務管理、連絡アプリ
+![rails](https://user-images.githubusercontent.com/56391010/88501741-42a9e380-d007-11ea-9805-feed3854699c.png)
 
 ## URL
 http://18.180.7.159/
