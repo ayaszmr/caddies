@@ -11,14 +11,14 @@
       -# .navi_item
       -#   %a{:href => "new_group_path"} MESSAGE
       .navi_item
+        =link_to user_path(current_user.id), class: "navi_item" do
+          MYPAGE
+      .navi_item
+        =link_to reports_path, class: "navi_item" do
+          WORKS-SCHEDULE
+      .navi_item
         = link_to groups_path, class: "navi_item" do
           MESSAGE
-      .navi_item
-        =link_to "#", class: "navi_item" do
-          WORKS
-      .navi_item
-        =link_to "#", class: "navi_item" do
-          GALLERY
       .navi_item
         =link_to "#", class: "navi_item" do
           FLOW
