@@ -1,31 +1,5 @@
 .side-bar {
   width: 100vw;
-  height: 6vh;
+  height: 1vh;
   background-color: royalblue;
-  .side-nav {
-    width: 100vw;
-    height: 10vh;
-    &-list {
-      width: 30vw;
-      height: 10vh;
-      list-style-type : none;
-      padding:5px 10px;
-      display: flex;
-      &--item {
-        width: 15vw;
-        display: block;
-        background: royalblue;
-        font-size: 14px;
-        color: #333;
-        box-sizing: inherit;
-        padding: 16px;
-        line-height: 14px;
-        text-decoration: none;
-        .icon-arrow-right {
-          width: 8px;
-          height: 14px;
-        }
-      }
-    }
-  }
 }
