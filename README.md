@@ -38,13 +38,6 @@ http://18.180.7.159/
 * Unicorn
 * Nginx
 
-
-# Usage
- 
-```bash
-git clone https://github.com/ayaszmr/caddies.git
-```
- 
 # Note
  
 トップページの登録ボタンをからその日の業務の報告ページにいけます.
