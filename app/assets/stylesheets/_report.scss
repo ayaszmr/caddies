@@ -2,10 +2,12 @@
   width: 100vw;
   height: 100vh;
   display: flex;
-  background-color: lemonchiffon;
+  background-image: image-url('golf.jpg');
+  background-size: cover;
   .center-report {
     margin: 0 auto;
-    margin-top: 10vh;
+    margin-top: 20vh;
+    height: 50vh;
     width: 50vw;
     background-color: lemonchiffon;
     &--head {
@@ -23,7 +25,7 @@
       }
     }
     &--main {
-      height: calc(100vh - 40vh);
+      height: 30vh;
       background-color: lemonchiffon;
       &__table{
         width: 100%;
@@ -40,9 +42,9 @@
         color: royalblue;
       }
       
-      table tr:nth-child(odd){
-        background-color: azure
-      }
+      // table tr:nth-child(odd){
+      //   background-color: azure
+      // }
     }
   }
 }
