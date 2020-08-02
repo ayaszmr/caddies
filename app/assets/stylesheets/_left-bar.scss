@@ -1,4 +1,45 @@
 .left-bar {
-  width: 30vw;
+  box-sizing: border-box;
+  width: 300px;
   height: 100vh;
+  .left-bar__header {
+    height: 100px;
+    line-height: 100px;
+    padding: 0 20px;
+    position: flex;
+    &__name {
+      display: inline-block;
+      font-size: 20px;
+      font-weight: bold;
+      color: royalblue;
+    }
+    &__icons {
+      color:royalblue;
+      font-size: 20px;
+      float: right;
+      display: inline-block;
+    }
+  }
+
+
+  .left-bar__groups-list {
+    height: calc(100vh - 100px);
+    padding: 0 20px;
+    .group {
+      box-sizing: border-box;
+      padding: 20px 0 40px;
+      text-decoration: none;
+      &__name {
+        font-size: 10px;
+        color: white;
+        text-decoration: none;
+      }
+      &__message {
+        font-size: 5px;
+        margin-top: 5px;
+        color: white;
+        text-decoration: none;
+      }
+    }
+  }
 }
