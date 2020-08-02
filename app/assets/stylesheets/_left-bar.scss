@@ -6,7 +6,6 @@
     height: 100px;
     line-height: 100px;
     padding: 0 20px;
-    position: flex;
     &__name {
       display: inline-block;
       font-size: 20px;
@@ -15,9 +14,9 @@
     }
     &__icons {
       color:royalblue;
-      font-size: 20px;
       float: right;
       display: inline-block;
+      font-size: 20px;
     }
   }
 
