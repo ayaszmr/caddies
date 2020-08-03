@@ -1,0 +1,17 @@
+.left-bar
+  .left-bar__header
+    %h3.left-bar__header__name
+      = current_user.name
+    .left-bar__header__icons
+      = link_to new_group_path do
+        ボタン
+        -# %i.fa.fa-commenting.fa-lg
+  .left-bar__groups-list
+    - current_user.groups.each do |group|
+      .group
+        = link_to group_messages_path(group) do
+          .group__name
+            = group.name
+          .group__message
+            -# = group.show_last_message
+            あああ

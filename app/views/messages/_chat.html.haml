@@ -1,34 +1,20 @@
-.messages
-  = render @messages
-.form
-  = form_for [@group, @message] do |f|
-    = f.text_field :content, class: 'form__message', placeholder: 'type a message'
-    = f.submit 'Send', class: 'form__submit'
+.chat
+  .chat-header
+    .left-header
+      %h3.left-header__title__current-group{data: {'group-id' => "#{@group.id}"}}
+        = @group.name
+      .left-header__members 
+        Member：
+        - @group.users.each do |user|
+          = user.name
+    .right-header
+      .right-header__button
+        = link_to "Edit", edit_group_path(@group.id), class: 'btn'
 
+  .messages
+    = render @messages
 
-
-
--# .chat
--#   .header
--#     .left-header
--#       %h3.left-header__title__current-group{data: {'group-id' => "#{@group.id}"}}
--#         = @group.name
--#       .left-header__members 
--#         Member：
--#         - @group.users.each do |user|
--#           = user.name
--#     .right-header
--#       .right-header__button
--#         = link_to "Edit", edit_group_path(@group.id), class: 'btn'
-
--#   .messages
--#     = render @messages
-
--#   .form
--#     = form_for [@group, @message] do |f|
--#       = f.text_field :content, class: 'form__message', placeholder: 'type a message'
--#       .form__mask
--#         = f.label :image, class: 'form__mask__image' do
--#           = fa_icon 'picture-o', class: 'icon'
--#           = f.file_field :image, class: 'hidden'
--#       = f.submit 'Send', class: 'form__submit'
+  .form
+    = form_for [@group, @message] do |f|
+      = f.text_field :content, class: 'form__message', placeholder: 'type a message'
+      = f.submit 'Send', class: 'form__submit'
