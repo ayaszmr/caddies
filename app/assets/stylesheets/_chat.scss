@@ -41,7 +41,8 @@
   .messages {
     box-sizing: border-box;
     padding: 46px 40px 0;
-    height: calc(100vh - 100px - 90px);
+    // height: calc(100vh - 100px - 90px);
+    height: 60vh;
     overflow: scroll;
     .message {
       .upper-message {
@@ -79,7 +80,7 @@
       width: calc(100% - 150px);
     }
     &__submit {
-      // background-color: $light_blue;
+      background-color: royalblue;
       border: none;
       // color: $white;
       float: right;
