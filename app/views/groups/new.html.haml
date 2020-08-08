@@ -1,7 +1,6 @@
 = render "top/header"
 = render 'top/side-bar'
 
-.wrapper
-  .chat-group-form
-    %h1 グループ作成
-    = render partial: 'form', locals: { group: @group }
+.chat-group-form
+  %h1 グループ作成
+  = render partial: 'form', locals: { group: @group }

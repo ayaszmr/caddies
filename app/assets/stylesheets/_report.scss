@@ -1,9 +1,6 @@
 .main-report {
   width: 100vw;
-  height: 100vh;
   display: flex;
-  background-image: image-url('golf.jpg');
-  background-size: cover;
   .center-report {
     margin: 0 auto;
     margin-top: 20vh;
@@ -34,12 +31,14 @@
       }
       
       table th,table td{
-        padding: 10px 0;
+        padding: 15px 0;
         text-align: center;
       }
 
       th{
         color: royalblue;
+        float: left;
+        margin-left: 50px;
       }
       
       // table tr:nth-child(odd){

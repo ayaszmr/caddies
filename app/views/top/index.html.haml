@@ -1,8 +1,6 @@
-.wrapper
-  
-  = render 'top/header'
-  = render 'top/side-bar'
+= render 'top/header'
+= render 'top/side-bar'
+= render 'top/tab'
 
-  .main-top
-    = render 'top/tab'
-    = render 'top/menu'
+- if user_signed_in?
+  = render 'top/menu'

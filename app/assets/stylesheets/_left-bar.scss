@@ -1,7 +1,7 @@
 .left-bar {
   box-sizing: border-box;
   width: 300px;
-  height: 100vh;
+  height: calc(100% - 300px);
   float: left;
   .left-bar__header {
     height: 100px;
@@ -23,7 +23,6 @@
 
 
   .left-bar__groups-list {
-    height: calc(100vh - 100px);
     padding: 0 20px;
     .group {
       box-sizing: border-box;
